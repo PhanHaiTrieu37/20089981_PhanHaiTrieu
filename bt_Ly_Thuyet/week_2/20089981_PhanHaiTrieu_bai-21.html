@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 21_Layout</title>
+
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .main {
+            padding: 10px;
+        }
+        .width-800{
+            width: 800px !important;
+
+        }
+
+        .height-50{
+            height: 50px !important;
+        }
+
+        
+        .height-500{
+            height: 500px !important;
+        }
+
+        .content-header {
+            border: 1px solid #000;
+            background: #ccc;
+        }
+        .col {
+            float: left;
+        }
+
+        .col-third{
+            width: 33.33333%;
+        }
+        
+        .bt-none {
+            border-top: none !important;
+        }
+
+        .bb-none {
+            border-bottom: none !important;
+        }
+
+        .content-footer p,
+        .content-header p {
+            text-align: center;
+        }
+
+        .content-section {
+            border-left: 1px solid #000 ;
+            border-right: 1px solid #000 ;
+            padding-top: 3px ;
+            background: #ccc;
+
+        }
+
+        .content-footer {
+            border: 1px solid #000 ;
+            padding-top: 3px ;
+            background: #ccc;
+        }
+
+        .content-section-nav {
+            background-color: #ccc;
+            /* width: 33.33333%;
+            float: left; */
+
+        }
+
+        .content-layout .cs-nav-first {
+            width: 200px;   
+            height: 500px;
+            border: 1px solid #000 ;
+            background: rgb(183, 60, 60);
+        }
+
+        .content-layout .cs-mid-section {
+            width: 400px;   
+            height: 500px;
+            /* border: 1px solid #000 ;
+            border-top: none; */
+            background: rgb(183, 60, 60);
+        }
+
+        .content-layout .cs-nav-end {
+            width: 200px;   
+            height: 500px;
+            border: 1px solid #000 ;
+            background: rgb(183, 60, 60);
+            
+        }
+
+        .content-layout .content-menu {
+            border-top: none;
+        }
+
+        .content-layout .cs-nav-end-layout4 {
+            width: auto;
+        }
+
+        .article {
+            background: rgb(20, 102, 169);
+            border: 1px solid #000;
+            width: 400px;
+            height: 400px;
+            margin: 33px 300px;
+        }
+
+        .content-nav-l5 {
+            height: 35px;
+        }
+
+        .cs-l5{
+            text-align: center  ;
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+        }
+
+        .cs-l6-1 {
+            border-left: 1px solid #000;
+            text-align: center;
+            width: 500px;
+        }
+
+        .cs-l6-1 div {
+            display: inline-block;
+            width: 90%;
+            height: 30%;
+        }
+
+        .cs-l6-2 {
+            width: 300px;
+            height: 500px;
+            border: 1px solid #000;
+        }
+
+        .art-l5 {
+            background: rgb(63, 204, 159);
+            border: 1px solid #000;
+            width: 90%;
+            height: 80%;
+            display: inline-block;
+        }
+
+        .art-l5-1 {
+            background: rgb(63, 204, 159);
+            border: 1px solid #000;
+            
+            display: inline-block;
+        }
+
+        .art-l5-2 {
+            background: rgb(11, 221, 154);
+            border: 1px solid #000;
+            
+            display: inline-block;
+        }
+
+        .footer-l6 {
+            border: 1px solid #000 ;
+            padding-top: 3px ;
+            background: #ccc;
+            display: inline-block;
+
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <h2 class="heading-layout">CSS Layout - Khung</h2> <br>
+        
+        <p>Layout 1</p> <br>
+
+        <div class="content-layout">
+            <header class="content-header width-800 height-50">
+                <p>header</p>
+            </header>
+            
+            <section class="content-section width-800 height-500">
+                <p>section</p>
+            </section>
+            
+            <footer class="content-footer width-800 height-50">
+                <p>footer</p>
+            </footer>
+        </div>
+
+        <p>Layout 2</p><br>
+
+        <div class="content-layout">
+            <header class="content-header width-800 height-50">
+                <p>header</p>
+            </header>
+            
+            <section class="content-section-nav width-800 height-500">
+
+                <div class="bt-none bb-none col col-third cs-nav-first">
+                    <p>nav</p>
+                </div>
+                <div class="col col-third cs-mid-section"></div>
+                <div class="bt-none bb-none col col-third cs-nav-end">
+                    <p>section</p>  
+                </div>
+            </section>
+            
+            <footer class="content-footer width-800 height-50">
+                <p>footer</p>
+            </footer>
+
+        </div>
+
+        <p>Layout 3</p><br>
+
+        <div class="content-layout">
+            <header class="content-header width-800 height-50">
+                <p>header</p>
+            </header>
+
+            <div class="content-menu content-header width-800 height-50">
+                <p>menu</p>
+            </div>
+            
+            <section class="content-section-nav width-800 height-500">
+
+                <div class="bt-none bb-none col col-third cs-nav-first">
+                    <p>nav</p>
+                </div>
+                <div class="col col-third cs-mid-section"></div>
+                <div class="bt-none bb-none col col-third cs-nav-end">
+                    <p>section</p>  
+                </div>
+            </section>
+            
+            <footer class="content-footer width-800 height-50">
+                <p>footer</p>
+            </footer>
+
+        </div>
+
+        <p>Layout 4</p><br>
+
+        <div class="content-layout">
+            <header class="content-header width-800 height-50">
+                <p>header</p>
+            </header>
+            
+            <section class="content-section-nav width-800 height-500">
+
+                <div class="bt-none bb-none col col-third cs-nav-first">
+                    <p>nav</p>
+                </div>
+                <div class="bt-none bb-none cs-nav-end cs-nav-end-layout4">
+                    <p>section</p>  
+                    <div class="article">
+                        <p>article</p>
+                    </div>
+                </div>
+            </section>
+            
+            <footer class="content-footer width-800 height-50">
+                <p>footer</p>
+            </footer>
+
+        </div>
+
+        <p>Layout 5</p><br>
+
+        <div class="content-layout">
+            <header class="content-header width-800 height-50">
+                <p>header</p>
+            </header>
+
+            <div class="content-nav-l5 content-menu content-header width-800 ">
+                <p>nav</p>
+            </div>
+            
+            <section class="cs-l5 content-section-nav width-800 height-500">
+                <p>section</p>
+                <div class="art-l5">
+                    <p>article</p>
+                </div>
+                
+            </section>
+            
+            <footer class="content-footer width-800 height-50">
+                <p>footer</p>
+            </footer>
+
+        </div>
+
+        <p>Layout 6</p><br>
+
+        <div class="content-layout">
+            <header class="content-header width-800 height-50">
+                <p>header</p>
+            </header>
+
+            <div class="content-nav-l5 content-menu content-header width-800 ">
+                <p>nav</p>
+            </div>
+            
+            <section class="cs-l6-1 content-section-nav col height-500">
+                <p>section</p>
+                <div class="art-l5-1">
+                    <p>article</p>
+                </div>
+
+                <div class="art-l5-2 bt-none">
+                    <p>article</p>
+                </div>
+                
+            </section>
+
+            <section class="cs-l6-2 content-section-nav col bt-none bb-none">
+                <p>aside</p>
+            </section>
+
+            <div class="footer-l6 width-800 height-50">
+                <p>footer</p>
+            </div>
+            
+            <!-- <footer class="content-footer width-800 height-50">
+                <p>footer</p>
+            </footer> -->
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
