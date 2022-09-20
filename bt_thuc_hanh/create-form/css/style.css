@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.mg-l-16px{
+    margin-left: 16px !important;
+}
+
+.pd-4{
+    padding: 4px !important;
+}
+
+.row-half {
+    width: 50% !important;
+}
+
+.mt-6{
+    margin-top: 6px !important;
+}
+.mb-6 {
+    margin-bottom: 6px !important;
+}
+
+.m-12 {
+    margin: 12px;
+}
+
+.p-6 {
+    padding: 6px;
+}
+
+.survey-form {
+    width: 800px;
+    height: 1024px;
+    background-color: bisque;
+}
+
+.survey-form h2{
+    text-align: center;
+}
+
+.ln-yes{
+    margin-right: 42px;
+}
+
+.contact-form {
+    margin: 16px;
+    position: relative;
+}
+
+.contact-form .form-control {
+    padding: 4px;
+}
+
+.send-clear {
+    text-align: center;
+    margin-top: 22px;
+}
+
+#input_questions {
+    padding: 0px 48px 48px 0px;
+    width: 60%;
+}

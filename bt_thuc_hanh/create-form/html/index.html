@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="main">
+        <div class="survey-form">
+            <h2>Survey Form</h2>
+            <p>if you are interested in purchasing one more of our products, 
+            before ordering please complete some or all of the following survey for our marketing department. 
+            Answering any question is optional, and all infomation will be kept strictly confidential. 
+            Thank you very much for your time!
+            </p>
+
+            <div class="contact-form">
+                <form action="" >
+                    <div class="name-form">
+                        <lablel class="mt-6 " for="name" >1. What is your name?</lablel><br>
+                        <input type="text" class="mg-l-16px pd-4 mt-6 mb-6  row-half ip-name" id="name" name="name" placeholder="Name " required class="form-control">
+                    </div>
+                    
+                    <div class="date-form">
+                        <lablel class="mt-6 " for="birth-day">2. What is your date of birth?</lablel><br>
+                        <input type="date" class="mg-l-16px pd-4 mt-6 mb-6" id="birth-day" name="birth-day"  required class="form-control">
+                    </div>
+
+                    <div class="mail-form">
+                        <lablel class="mt-6 " for="mail" >4. What is your email address?</lablel><br>
+                        <input type="text" class="mg-l-16px pd-4 mt-6 mb-6 row-half " id="mail" name="mail" placeholder="Email " required class="form-control">
+                    </div>
+
+                    <div class="catalog-form">
+                        <p>5. Have you vieweb our online product catalog</p>
+                        <input class="mt-6 " type="radio" id="catalog-yes" name="catalog" value="Yes">
+                        <label class="mt-6 lb-yes" for="catalog-yes">Yes</label>
+
+                        <input class="mt-6 " type="radio" id="catalog-No" name="catalog" value="No">
+                        <label class="mt-6 " for="catalog-No">No</label>
+                        
+                    </div>
+
+                    <div class="check-apply">
+                        <p>6. If so, what product, besides the one you are ordering, might you be interested in purchasing
+                            in the future? (check all apply.)
+                        </p>
+
+                            <input type="checkbox" id="VCR" name="VCR" value="VCR">
+                            <label for="vehicle1"> VCR</label><br>
+                            
+                            <input type="checkbox" id="screen" name="screen_tv" value="tv">
+                            <label for="vehicle2"> Big Screen TV</label><br>
+                            
+                            <input type="checkbox" id="Audio" name="Audio_E" value="Audio">
+                            <label for="vehicle3"> Audio Equipment</label><br>  
+                            
+                            <input type="checkbox" id="Video" name="Video_E" value="Video">
+                            <label for="vehicle2"> Video Equipment</label><br>
+                            
+                            <input type="checkbox" id="Camera" name="Camera_E" value="Camera">
+                            <label for="vehicle3"> Camera Equipment</label><br>
+                            
+                            <input type="checkbox" id="Other" name="Other_" value="Other">
+                            <label for="vehicle3"> Other</label>
+                            <input type="text" name="Other_" id="Other" value="Please List: ">
+                            <br><br>
+                    </div>
+
+                    <div class="any_questions">
+                        <p>
+                           7. Do you have any questions, comments or suggestions before proceeding to the Order Form? 
+                        </p>
+                        <input type="text" name="questions" id="input_questions" value="Your Input: ">
+                    </div>
+
+                    <div class="send-clear">
+
+                        <input type="submit" class="m-12 p-6" value="Send Form">
+
+                        <input type="reset" class="m-12 p-6" value="Clear Form">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

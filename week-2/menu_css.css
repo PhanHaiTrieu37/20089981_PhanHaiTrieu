@@ -1,0 +1,120 @@
+/* Reset SCC */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.header {
+    height: 46px;
+    width: 100%;
+    background-color: #000 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+
+}
+
+#nav > li{
+    display: inline-block; /* sort cho li thành hàng dọc */
+    /* float: left; */
+    
+    
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a{
+    /* position: absolute; */
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav li a {
+    
+    text-decoration: none; /* xóa gạch dưới của thẻ li */
+    line-height: 46px; /* căn giữa */
+    display: block; /* đổ màu cho cả khổi li */
+    padding: 1px 24px;/* cách đều giữa các chữ */
+    
+}
+
+#nav > li:hover i,
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: rgb(0, 0, 0);
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: rgb(105, 96, 96);
+    min-width: 160px;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+}
+    
+
+#nav .subnav a{
+    color: #000;
+    padding-left: 16px;
+}
+
+#nav .subnav > li {
+    list-style-type: none;
+    /* display: block; */
+}
+
+.header .nav-imenu-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /* display: none; */
+}
+
+
+.header .nav-imenu-btn,
+.header .nav-isearch{
+    /* display: inline-block; */
+    float: right;
+    line-height: 46px ;
+    padding: 0px 21px;
+}
+
+.header .nav-imenu-btn,
+.header .fa-solid {
+    font-size: 20;
+    color: #fff;
+}
+
+.header .nav-isearch:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.header .nav-imenu-btn:hover {
+    background-color: #ccc; 
+}
+
+.header .nav-imenu-btn:hover .imenu {
+    color: #000;
+}
+
+#nav .subnav  li a{
+    /* display: block; */
+}
