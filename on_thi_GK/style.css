@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+}
+
+.header__text {
+    background-color: rgb(210, 131, 28);
+    height: 80px;
+    line-height: 80px;
+}
+
+.header__text h1 {
+    margin-left: 16px;
+    color: rgb(8, 79, 14);
+    text-shadow: -1px -1px 3px #fff;
+}
+
+.header__menu {
+    height: 46px;
+    border: 1px solid #000;
+}
+
+.header__menu li{
+    display: inline-block;
+    color: rgb(210, 131, 28);
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0px 16px;
+}
+
+.header__menu li:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
+.header__pic {
+    width: 100%;
+    height: 192px;
+    background: url(../on_thi_GK/img/content-img.png) top center / cover no-repeat;
+    
+}
+
+.content {
+    height: 800px;
+    display: flex;
+}
+
+.content__sec{
+    border: 1px solid #000;
+
+}
+
+.content__des {
+    border: 1px solid #000;
+
+}
+
