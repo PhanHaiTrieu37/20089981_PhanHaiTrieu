@@ -1,0 +1,180 @@
+* 
+{
+    padding: 0px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 1000px;
+    background:linear-gradient(#00d7ffeb,#009effd6);
+    position: relative;
+    border: 1px solid black;
+}
+
+header {
+    height: 52px;
+    position: relative;
+    border-bottom: 3px dotted white ;
+}
+
+.nav {
+    position: absolute;
+    display: flex;
+    left: 20px;
+    bottom: 15px;
+    list-style: none;
+}
+
+
+.nav a{
+    text-decoration: none;
+    padding:16px 20px;
+    color: white;
+    font-weight: 550
+
+}
+
+.nav a:hover {
+    opacity: 0.6;
+}
+
+.nav li {
+    position: relative;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    background: rgb(49, 154, 223);
+    list-style: none;
+    top: 35px;
+    left: 0px;
+    width: 100px;
+}
+
+.subnav >li  {
+    padding: 7px;
+
+}
+
+.nav li:hover .subnav {
+    display: block;
+    
+}
+
+.logo {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.logo h2 {
+    color: white;
+    text-shadow: -2px -2px 5px #003bcc;
+}
+
+.content{
+    display: flex;
+    border-bottom: 3px dotted white ;
+
+}
+
+.content-img img{
+    padding: 38px 22px;
+}
+
+.title-img {
+    margin-left: 30px;
+}
+
+.content-img img:hover {
+    /* transform: scale(2) rotate(360deg); */
+    /* -webkit-transform: scale(2) rotate(360deg); */
+    /* -ms-transform: scale(2) rotate(360deg);
+    -o-transform: scale(2) rotate(360deg);
+     */
+    /* -webkit-animation-name: scroll; */
+    opacity: 0.6;
+    
+}
+
+.title-img h2 {
+    color: white;
+}
+
+.title-img p {
+    margin-left: 8px;
+    color: gainsboro;
+}
+
+aside {
+    padding: 0px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    color: white;
+}
+
+.title-form h2 {
+    margin-bottom: 14px;
+}
+
+.title-form p {
+    margin: 8px 0px;
+}
+
+form {
+    margin-left: 52px;
+    margin-right: 32px;
+}
+
+.form-col {
+    display: flex;
+    
+}
+
+.form-col label{
+    flex-basis: 40%;
+    padding: 4px 0px;
+    margin: 4px 0px;
+}
+
+.form-col input{
+    flex-basis: 50%;
+    padding: 4px 0px;
+    margin: 4px 0px;
+    border: 2px solid #1e5aee;
+    border-radius: 10px;
+    outline: none;
+
+}
+
+.form-col textarea{
+    margin: 4px;
+    border: 2px solid #1e5aee;
+    border-radius: 10px;
+}
+
+.btn {
+    margin-top: 16px;
+    margin-left: 208px;
+}
+
+.btn input {
+    padding: 6px 8px;
+    margin-right: 16px;
+    border: 2px dashed #1320d1;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+
+footer {
+    height: 80px;
+    text-align: center;
+}
+
+footer p {
+    text-transform: uppercase;
+    color: white;
+    line-height: 80px;
+}

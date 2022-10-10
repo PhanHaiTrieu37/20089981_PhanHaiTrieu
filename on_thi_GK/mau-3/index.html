@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template 1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="menu">
+                <ul class="nav">
+                    <li><a href="">Home</a></li>
+                    <li>
+                        <a href="">Product</a>
+                        <ul class="subnav">
+                            <li><a href="">Product Development</a></li>
+                            <li><a href="">Product Marketing</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="logo">
+                <h2>Blue World</h2>
+            </div>
+        </header>
+
+        <div class="content">
+            <section>
+                <div class="content-img">
+                    <img src="./img/Screenshot 2022-10-10 233806.png" alt="Sea">
+                </div>
+                <div class="title-img">
+                    <h2>Happiness on Earth</h2>
+                    <p>Inspiring destinations within your reach.</p>
+                </div>
+
+            </section> 
+
+            <aside>
+                    <div class="title-form">
+                        <h2>Your contact information</h2>
+
+                        <p>
+                            Start your travel planning right now with our on-line tour registration form. Just <br>
+                            tell us a tittle about yourself and your group and of our travel experts will <br>
+                            contact you to create the perfect tour package custom built for your group's <br>
+                            needs
+                        </p>
+                    </div>
+                    <form action="submit-form">
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="title-form">Title</label>
+                                <input list="sex" id="title-form" name ="title-form">
+                                <datalist id = "sex" >
+                                    <option value="Mr.">
+                                    <option value="Mrs.">
+
+                                </datalist>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="ip-name">Full Name* </label>
+                                <input type="text" name="ip-name" id="ip-name" placeholder="First Name">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="ip-mail">Mailing Address </label>
+                                <input type="mail" name="ip-mail" id="ip-mail" placeholder="Mailing Address">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="ip-city">City </label>
+                                <input type="text" name="ip-city" id="ip-city" placeholder="City">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="ip-country">Country </label>
+                                <input type="text" name="ip-country" id="ip-country" placeholder="Country">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="ip-question">Specific question or requests about your tour </label>
+                                <textarea name="ip-question" placeholder="Specific question or requests about your tour" id="ip-question" cols="33" rows="6"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="btn">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+
+                        </div>
+                    </form>
+            </aside>
+        </div> 
+
+        <footer>
+            <p>Đại học công nghiệp thành phố hồ chí minh</p>
+        </footer>
+    </div>
+</body>
+</html>

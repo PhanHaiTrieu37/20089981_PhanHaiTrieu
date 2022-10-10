@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    var DS = new Array(100)
+    soluong= parseInt(prompt("Nhap so nguoi trong phong ban :",5))
+    for (i=0;i<soluong;i++) {
+        DS[i] = prompt("Nhap vao ho ten nguoi thu" + i )
+    }
+    DS.sort()
+    document.write("Danh sach phong ban sau khi sap xep la" +"<Br>")
+    for(var x in DS) {
+        document.write(DS[x] +"<Br>")
+    }
+</script>

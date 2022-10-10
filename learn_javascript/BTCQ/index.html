@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTCQ</title>
+    <!-- <script>
+        function kiemtra() {
+            var mauKT = /^[A-Za-z]{20}$/;
+            if (mauKT.test(KT.txtHT.value)== true) {
+                alert("Ban nhap dung");
+            } else {
+                alert("ban nhap sai");
+            }
+        }
+    </script> -->
+</head>
+<body>
+    <div class="main">
+        <form action="" id ="KT" method="get">
+            <label for="lbl">Ho va Ten</label> <br><br>
+            <input type="text" name="txtHT" id="txtHT" placeholder="nhap ho va ten" onblur="kiemtra()">
+        </form>
+    </div>
+
+    <label for="username">username</label>
+    <div>
+        <input id="username" class="input-text" type="text">
+        <span id="username-valid-label" style="display: block;color: red"></span>
+    </div>
+
+    <script>
+    document.getElementById("username").addEventListener("change", function() {
+        var username = this.value;
+        var result = validateUsername(username);
+        var label = document.getElementById("username-valid-label");
+        if (result) {
+            label.innerText = '';
+        } else {
+            label.innerText = 'Invalid string. only [a-z0-9_] min-max 5-20';
+        }
+    });
+    </script>
+</body>
+</html>

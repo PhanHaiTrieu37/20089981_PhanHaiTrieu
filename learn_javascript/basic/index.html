@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic javascript</title>
+
+    <style>
+        .main{
+            padding: 0px;
+            margin: auto;
+            box-sizing: border-box;
+
+        }
+
+        .main{
+            width:800px ;
+            height: 800px;
+        }
+
+        .labels__num {
+            float: left;
+            margin-right: 16px;
+        }
+
+        .input__num{
+            float: left;
+
+        }
+
+        .btn{
+            padding: 32px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="h2">function calc</div>
+        <form action="" method="get" id="calc">
+            <div class="labels__num">
+                <label for="lbl-numA" >nhap so A</label><br><br>
+                <label for="lbl-numB" >nhap so B</label><br><br>
+            </div>
+
+            <div class="input__num">
+                <input type="text" id="numA" name ="numA"></input><br><br>
+                <input type="text" id="numB" name ="numB"></input><br><br>
+            </div>
+
+            <div class="btn">
+
+                <input type="button" id="btn" value = "Tinh" onclick="tinhtong()"></input>
+            </div>
+        </form>
+    </div>
+
+    <script src="./action.js"></script>
+</body>
+</html>

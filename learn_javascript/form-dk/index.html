@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form dang ky</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function kiemtrausename() {
+        var check = /^[a-z0-9_-]{3,16}$/;
+        if(check.test(frm.txtTenDN.value)) {
+            txtTenDN.style.border = "1px solid green";
+        }else {
+            txtTenDN.style.border = "1px solid red";
+            alert("nhap sai, lam lai!!");
+        }
+    }
+
+    function kiemtrapassword() {
+        var check = /^([A-Z]){1}([\w_.!@#$%^&*()]+){5,31}$/;
+
+        // var check = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,24}$/;
+        if(check.test(frm.txtMK.value)) {
+            txtMK.style.border = "1px solid green";
+        }else {
+            txtMK.style.border = "1px solid red";
+            alert("mat khau sai, nhap lai!!");
+        }
+    }
+
+    function kiemtrapassword2() {
+        
+        if(txtMK.value == txtreMK.value) {
+            txtreMK.style.border = "1px solid green";
+        }else {
+            txtreMK.style.border = "1px solid red";
+            alert("nhap sai, nhap lai!!");
+        }
+    }
+    function kiemTraTen() {
+                var mauKT=/^[A-Za-z ]{1,30}$/;
+                if (mauKT.test(frm.txtHoTen.value)==true) {
+                    txtHoTen.style.border="1px solid green";
+                } else {
+                    txtHoTen.style.border="1px solid red";
+                    alert("Ban da nhap ten sai");
+                }
+            }
+
+    function kiemtrasdt() {
+        var check = /^0[9|8|1|7|3|5]([0-9]|\s|-|\.){8,12}$/;
+        if(check.test(frm.txtDienThoai.value)) {
+            txtDienThoai.style.border = "1px solid green";
+        }else {
+            txtDienThoai.style.border = "1px solid red";
+            alert("Sai cu phap!!!");
+        }
+    }
+
+
+    function kiemtraemail() {
+        var check = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+        if(check.test(frm.txtEmail.value)) {
+            txtEmail.style.border = "1px solid green";
+        }else {
+            txtEmail.style.border = "1px solid red";
+            alert("nhap sai, lam lai!!");
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="DKTK">
+            <form action="" method="get" id="frm">
+                <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+                <div class="tenDN d-flex m-8">
+                    <label class="min-w" for="lbl-tenDN">Tên đăng nhập :</label>
+                    <input type="text" name="txtTenDN" id="txtTenDN" class="full-w "  placeholder="Nhập tên đăng nhập" onblur="kiemtrausename()">
+                </div>
+
+                <div class="MK d-flex m-8">
+                    <label class="min-w" for="lbl-MK">Mật khẩu :</label>
+                    <input type="password" name="txtMK" id="txtMK" class="full-w " placeholder="Nhập Mật khẩu" onblur="kiemtrapassword()">
+                </div>
+
+                <div class="re-MK d-flex m-8">
+                    <label class="min-w" for="lbl-re-MK">Nhập lại mật khẩu :</label>
+                    <input type="password" name="txtreMK" id="txtreMK" class="full-w " placeholder="Nhập lại Mật khẩu" onblur="kiemtrapassword2()">
+                </div>
+
+                <div class="info">
+                    <h3>Thông tin cá nhân</h3>
+                </div>
+
+                <div class="hoTen d-flex m-8">
+                    <label class="min-w" for="lbl-HoTen">Họ và tên :</label>
+                    <input type="text" name="txtHoTen" id="txtHoTen" class="full-w " placeholder="Nhập vào họ và tên (bắt buộc nhập)" onblur="kiemTraTen()">
+                </div>
+
+                <div class="NgaySinh d-flex m-8">
+                    <label class="min-w" for="lbl-NgaySinh">Ngày sinh :</label>
+                    <input type="date" name="txtNgaySinh" id="txtNgaySinh" class=" " >
+                </div>
+
+                <div class="GioiTinh d-flex m-8">
+                    <label class="min-w" for="lbl-GioiTinh">Giới tính :</label>
+
+                    <input type="radio" name="txtGioiTinh" id="txtGioiTinhNam"  >
+                    <label for="lbl-GioiTinh">Nam</label>
+
+                    <input type="radio" name="txtGioiTinh" id="txtGioiTinhNu"  >
+                    <label for="lbl-GioiTinh">Nữ</label>
+
+
+                </div>
+
+                <div class="DiaChi d-flex m-8">
+                    <label class="min-w" for="lbl-DiaChi">Địa chỉ :</label>
+                    <input type="text" name="txtDiaChi" id="txtDiaChi" class="full-w " placeholder="Nhập vào địa chỉ">
+                </div>
+
+                <div class="DienThoai d-flex m-8">
+                    <label class="min-w" for="lbl-DienThoai">Điện thoại :</label>
+                    <input type="tel" name="txtDienThoai" id="txtDienThoai" class="full-w " placeholder="Nhập vào số điện thoại(9-10 số) " onblur="kiemtrasdt()">
+                </div>
+
+                <div class="Email d-flex m-8">
+                    <label class="min-w" for="lbl-Email">Email :</label>
+                    <input type="Email" name="txtEmail" id="txtEmail" class="full-w " placeholder="Nhập vào email cá nhân theo dạng ten@tencongty.com" onblur="kiemtraemail()">
+
+                </div>
+
+                <div class="btn-DK d-flex">
+                    <button class="btn">Đăng ký</button>
+                    <button class="btn">Hủy</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>

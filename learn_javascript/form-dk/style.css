@@ -1,0 +1,54 @@
+.main{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.DKTK {
+    width: 800px;
+    height: 1000px;
+    margin: auto;
+    border: 1px solid #000;
+    padding: 8px;
+    box-shadow: -4px -4px 18px #000
+}
+
+.m-8 {
+    margin: 8px !important;
+}
+
+.p-8{
+    padding: 8px !important;
+}
+
+.DKTK input,
+.DKTK label {
+    padding: 8px;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.full-w {
+    flex: 1;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.min-w {
+    min-width: 150px;
+}
+
+.btn-DK {
+    justify-content: center;
+}
+
+.btn{
+    padding: 8px;
+    margin: 16px;
+    cursor: pointer;
+}
